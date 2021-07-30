@@ -35,7 +35,7 @@ LIST_B =ft_lstnew.c			ft_lstadd_front.c	ft_lstlast.c\
 OBJ = $(LIST:.c=.o)
 OBJ_B = $(LIST_B:.c=.o)
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra
 
 all: $(NAME)
 

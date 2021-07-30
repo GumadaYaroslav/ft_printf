@@ -16,8 +16,8 @@ typedef struct s_specifier
 }				t_specifier;
 
 int		ft_printf(const char *str, ...);
-int		print_it(const char *str, struct s_specifier *flags, va_list ap,
-			int *i);
+int		parce_data_type(const char *str, struct s_specifier *flags,
+			va_list ap, int *i);
 int		ft_atoi(const char *str);
 int		ft_putstr_fd_len(char *s, int fd, int len);
 int		ft_putnbr_base(unsigned long long n, size_t b_len, char *base);

@@ -42,7 +42,7 @@ int	ft_parser(const char **str, int *i, va_list ap, t_specifier *flags)
 		j[2] = ft_pars_width(*str, flags, ap);
 		if (flags->width == -1)
 			return (-1);
-		j[0] = j[0] + j[1] + j[2];
+		j[0] = j[1] + j[2];
 		*str = *str + j[2];
 		j[2] = ft_pars_accur(*str, flags, ap);
 		j[0] = j[0] + j[2];
@@ -50,7 +50,7 @@ int	ft_parser(const char **str, int *i, va_list ap, t_specifier *flags)
 		if (ft_pars_tipe_deff(**str))
 		{
 			j[0] = j[0] + 1;
-			print_it(*str, flags, ap, i);
+			parce_data_type(*str, flags, ap, i);
 		}
 		else
 			return (-1);

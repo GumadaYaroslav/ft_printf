@@ -96,17 +96,3 @@ char	**ft_split(char const *s, char c)
 	arr[j] = NULL;
 	return (arr);
 }
-
-// int main()
-// {
-// 	int i = 0;
-// 	char *str = "             ";
-// 	char **s = ft_split(str, ' ');
-// 	// while(s[i] && s)
-// 	// {
-// 		printf("%s\n", s[i]);
-// 	// 	i++;
-// 	// }
-// 	// printf("\n%s len of word\n", s[0]);
-// 	return (0);
-// }

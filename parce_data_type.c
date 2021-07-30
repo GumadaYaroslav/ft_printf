@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 
-int	print_it(const char *str, struct s_specifier *flags, va_list ap, int *i)
+int	parce_data_type(const char *str, struct s_specifier *flags,
+		va_list ap, int *i)
 {
 	if (*str == (const char) 'c')
 		ft_print_char(flags, ap, i);
